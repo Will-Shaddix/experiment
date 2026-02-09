@@ -119,7 +119,7 @@ def _process_run_args(proj_config, run_args, unknown_args):
     if run_args.debug_flags is not None:
         command += f" --debug-flags={run_args.debug_flags}"
     if run_args.debug_file is not None:
-        debug_file = path_config.gem5_out_base_dir() / run_args.debug_flags
+        debug_file = path_config.gem5_out_base_dir() / run_args.debug_file
         command += f" --debug-file={debug_file}"
     if run_args.debug_start is not None:
         command += f" --debug-start={run_args.debug_start}"
